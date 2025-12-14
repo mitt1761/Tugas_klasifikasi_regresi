@@ -53,7 +53,13 @@ with tab1:
     st.write("""
     Confusion Matrix menunjukkan perbandingan antara kategori aktual dan hasil prediksi.
     Nilai diagonal menandakan prediksi yang benar, sedangkan nilai di luar diagonal
-    menunjukkan kesalahan prediksi.
+    menunjukkan kesalahan prediksi. Berdasarkan confusion matrix yang ditampilkan, 
+    terlihat bahwa kategori Food dan Carbonated memiliki jumlah prediksi benar yang paling tinggi, 
+    ditunjukkan oleh nilai besar pada bagian diagonal. Hal ini menunjukkan bahwa model klasifikasi 
+    mampu mengenali kategori produk yang paling sering muncul dalam data dengan baik.
+    Namun, masih terdapat beberapa kesalahan prediksi, terutama pada kategori dengan jumlah data 
+    lebih sedikit seperti Water, yang sering diprediksi sebagai kategori lain. Hal ini menunjukkan 
+    bahwa ketidakseimbangan jumlah data antar kategori memengaruhi performa model.
     """)
 
 #  REGRESI
@@ -85,7 +91,9 @@ with tab2:
 
     # PENJELASAN
     st.write("""
-    Scatter plot menunjukkan perbandingan nilai aktual dan nilai hasil prediksi.
-    Titik yang mendekati garis diagonal menandakan bahwa model regresi
-    mampu memprediksi total transaksi dengan baik.
+    Pada scatter plot regresi, sebagian besar titik berada di sekitar garis diagonal, 
+    yang menandakan bahwa nilai prediksi total transaksi cukup mendekati nilai aktual. 
+    Meskipun terdapat beberapa titik yang menyimpang, pola keseluruhan menunjukkan 
+    bahwa model regresi sudah mampu menangkap hubungan antara harga, jumlah produk, 
+    dan total transaksi dengan cukup baik.
     """)
